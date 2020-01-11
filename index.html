@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-  Highlights by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
     <title>Kayla Silvey</title>
@@ -127,12 +122,12 @@
     <!-- Three -->
     <section id="three" class="main special">
       <div class="container">
-        <span class="image fit primary"><img src="https://images.unsplash.com/photo-1526554850534-7c78330d5f90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="" /></span>
+        <span class="image fit primary"><img src="images/mail.jpg" alt="" /></span>
         <div class="content">
           <header class="major">
             <h2>Get in touch</h2>
         </header>
-        <form method="post" action="#">
+        <form method="post" action="contact-form-handler.php">
           <div class="row gtr-uniform">
             <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
             <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -173,5 +168,11 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script language="JavaScript">
+      var frmvalidator  = new Validator("contactform");
+      frmvalidator.addValidation("name","req","Please provide your name");
+      frmvalidator.addValidation("email","req","Please provide your email");
+      frmvalidator.addValidation("email","email", "Please enter a valid email address");
+    </script>
   </body>
 </html>
