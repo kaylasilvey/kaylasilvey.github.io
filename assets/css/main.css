@@ -79,7 +79,7 @@ input, select, textarea {
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url(images/classics.jpg);
+		background-image: url("images/overlay.png"), url("images/athena.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -2785,6 +2785,7 @@ input, select, textarea {
 	#header {
 		height: 100vh;
 		position: relative;
+    background-image: url("images/athena.png");
 		text-align: center;
 	}
 
@@ -2921,15 +2922,15 @@ input, select, textarea {
 		/* Main BG */
 
 			.main-bg {
-				display: none;
+/*				display: none;*/
 			}
 
 		/* Main */
 
-			.main .image.primary {
+	/*		.main .image.primary {
 				display: block;
 				margin: 0 0 4em 0;
-			}
+			}*/
 
 			.main .container {
 				padding: 3em 3em 8em 3em ;
